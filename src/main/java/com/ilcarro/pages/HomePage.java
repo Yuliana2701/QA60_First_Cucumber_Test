@@ -20,4 +20,10 @@ WebElement loginLink;
         click(loginLink);
         return new LoginPage(driver);
     }
+    @FindBy(xpath = "//a[.=' Search ']")
+    WebElement searchLink;
+    public SearchPage clickOnSearchLink() {
+        click(searchLink);
+        return new SearchPage(driver);
+    }
 }

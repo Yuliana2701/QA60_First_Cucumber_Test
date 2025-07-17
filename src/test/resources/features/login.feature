@@ -1,7 +1,7 @@
 Feature: Login
   @validData
   Scenario: Login with valid data
-    Given user lunches Chrome browser
+    Given user launches Chrome browser
     When user opens ilcarro HomePage
     And user clicks on login link
     And user enters valid data
@@ -12,7 +12,7 @@ Feature: Login
     @wrongPassword
     Scenario Outline: Login with valid email ana wrong password
 
-    Given user lunches Chrome browser
+    Given user launches Chrome browser
     When user opens ilcarro HomePage
     And user clicks on login link
     And user enters valid email and wrong password

@@ -9,8 +9,8 @@ import io.cucumber.java.en.When;
 import static com.ilcarro.pages.BasePage.driver;
 
 public class HomePageSteps {
-    @Given("user lunches Chrome browser")
-    public void lunches_Chrome_browser() {
+    @Given("user launches Chrome browser")
+    public void launches_Chrome_browser() {
         new HomePage(driver).lunchBrowser();
     }
     @When("user opens ilcarro HomePage")
@@ -25,7 +25,6 @@ public class HomePageSteps {
     @And("user quits browser")
     public void quit_browser(){
         new HomePage(driver).tearDown();
-
 
     }
 }
